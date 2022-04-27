@@ -1,3 +1,5 @@
 github.com
 example.com
 rt.com
+kodi.tv
+nzherald.co.nz
