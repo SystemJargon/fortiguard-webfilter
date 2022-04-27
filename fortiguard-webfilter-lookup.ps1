@@ -1,4 +1,3 @@
-#$urls=gc "url-blacklist-scan.txt"
 $urls=gc "$env:USERPROFILE\Documents\GitHub\web-filter-lookup\url-blacklist-scan.txt"
 
 foreach($url in $urls){
