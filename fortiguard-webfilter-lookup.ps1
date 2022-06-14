@@ -1,4 +1,4 @@
-$urls=gc "$env:USERPROFILE\Documents\GitHub\web-filter-lookup\url-blacklist-scan.txt"
+$urls=gc "$env:USERPROFILE\addresses.txt"
 
 foreach($url in $urls){
 $web = Invoke-WebRequest https://www.fortiguard.com/webfilter?q=$url 
