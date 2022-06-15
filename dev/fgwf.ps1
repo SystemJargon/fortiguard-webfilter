@@ -1,3 +1,6 @@
+## note - older script, quick simple, but not "all" but most HTML is stripped out.
+## each category has an H4 HTML tag wrapped around it on output result/s.
+
 $urls=gc "$env:USERPROFILE\addresses.txt"
 
 foreach($url in $urls){
