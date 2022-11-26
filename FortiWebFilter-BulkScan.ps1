@@ -1,5 +1,5 @@
 ## Created by SystemJargon
-## https://github.com/SystemJargon
+## https://github.com/SystemJargon/fortiguard-webfilter
 ## Created as Fortinet do not have a bulk URL scan utility nor any friendly API which exists for their webfilter.
 
 ## What this script does / things to understand?
