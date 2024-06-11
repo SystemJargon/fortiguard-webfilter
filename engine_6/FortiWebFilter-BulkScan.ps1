@@ -11,10 +11,10 @@
 
 
 # Full path of the file
-$file = "$HOME\FortiWebFilter-BulkScan\addresses.txt"
+$file = "$env:USERPROFILE\FortiWebFilter-BulkScan\addresses.txt"
 
 #Full path to the archiving folder
-$WorkingDir = "$HOME\FortiWebFilter-BulkScan"
+$WorkingDir = "$env:USERPROFILE\FortiWebFilter-BulkScan"
 
 # If the file exists, do nothing, else create it.
 if (Get-Item -Path $file -ErrorAction Ignore) {
@@ -77,10 +77,10 @@ Write-Host "Begining webfilter category scan from addresses.txt"
 #Write-Host "This may take some time depending on how many url or domains are to be scanned"
 
 foreach($url in $urls) {
-$web = Invoke-WebRequest https://www.fortiguard.com/search?q=$url"&"engine=7
+$web = Invoke-WebRequest https://www.fortiguard.com/webfilter?q=$url 
 # Write Output
 Add-Content -Value "$url" -Path $wfout1 
-$stringup = $web.tostring() -split "[`r`n]" | select-string "The address has been found as"
+$stringup = $web.tostring() -split "[`r`n]" | select-string ">Category: "
 Add-Content -Value $stringup -Path $wfout1 
 Add-Content -Value ------  -Path $wfout1 
 
