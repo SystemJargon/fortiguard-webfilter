@@ -1,24 +1,17 @@
 ---
 name: Issue
-about: Raise an issue
-title: ''
+about: Create an issue.
+title: "[Issue] - "
 labels: issue
-assignees: ''
+assignees: SystemJargon
+
 ---
 
-## What exactly are you trying to do?
+**Describe the issue**
 
-Describe in as much detail as possible.
+A clear and concise description of what the issue is as a problem statement.
 
-## What have you tried so far?
+**Screenshots**
 
-Describe what you have tried so far.
+If applicable, add screenshots to help explain your problem.
 
-## Where else have you checked for solutions?
-
-* [ ] I have read any user guides and/or README.md file/s, and not found the answer.
-* [ ] Other, please give details.
-
-## Additional context
-
-Add any other context about the problem here.
