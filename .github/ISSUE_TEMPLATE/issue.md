@@ -1,8 +1,8 @@
 ---
-name: Support request
-about: Raise a support request
+name: Issue
+about: Raise an issue
 title: ''
-labels: support
+labels: issue
 assignees: ''
 ---
 
